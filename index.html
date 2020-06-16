@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+    <title>BoozApp!</title>
+  </head>
+  <body id="forbidden">
+    <div class="container">
+      <!-- LEFT-SIDE -->
+       <div id="left">
+         <div class="top">
+           <div class="avatar">
+             <img src="img/avatar_io.jpg" alt="avatar">
+           </div>
+           <!-- ICONS + EXTRA LIGHT AND DARK MODE -->
+           <div class="icon">
+             <a href="#"><i class="far fa-lightbulb lightmode"></i></i></a>
+             <a href="#"><i class="far fa-moon darksun"></i></i></a>
+             <a href="#"><i class="fas fa-circle-notch"></i></a>
+             <a href="#"><i class="fas fa-comment-alt"></i></a>
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+           </div>
+         </div>
+         <!-- NOTIFICATION -->
+         <div class="bell">
+           <div class="campanella">
+             <a href="#"><i class="fas fa-bell-slash"></i></a>
+           </div>
+           <div class="messaggio">
+             <p class="strong">Ricevi notifiche di nuovi messaggi</p>
+             <a href="#">Attiva notifiche desktop</a>
+           </div>
+         </div>
+         <!-- SEARCHING CONTACT -->
+         <div class="searching_bar">
+           <i class="fas fa-search"></i>
+           <input class="input-field" id="ricerca" type="text" placeholder="Cerca o inizia una nuova chat">
+         </div>
+         <!-- CONTACTS -->
+         <div class="contatti ">
+           <ul>
+             <!-- 1st contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_1.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Lemmy Kilmister</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">05:37</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 2nd contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_2.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Jimi Hendrix</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">18:09</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 3rd contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_3.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Phil Anselmo</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">17:54</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 4th contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_4.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Wayne Static</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">07:03</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 5th contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_5.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Roger Daltrey</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">19:17</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 6th contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_6.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Jim Morrison</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">12:25</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 7th contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_7.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">Corey Taylor</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">22:22</span>
+                 </div>
+               </div>
+             </li>
+             <!-- 8th contact -->
+             <li class="item-contatti border-bottom">
+               <div class="avatar">
+                 <img src="img/avatar_8.jpg" alt="avatar">
+               </div>
+               <div class="info">
+                 <div class="nome">
+                   <p class="strong">John Fogerty</p>
+                 </div>
+                 <div class="status">
+                   <span>Non poteva essere altrimenti</span>
+                   <span class="time">08:05</span>
+                 </div>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </div>
+       <!-- RIGHT SIDE  -->
+       <div id="right">
+         <div class="top">
+           <div class="avatar">
+             <img src="img/avatar_1.jpg" alt="avatar">
+           </div>
+           <div class="info">
+             <div class="nome">
+               <p class="strong">Lemmy Kilmister</p>
+             </div>
+             <div class="status">
+               <p>Ultimo accesso oggi alle 05:37</p>
+             </div>
+           </div>
+           <div class="icon">
+             <a href="#"><i class="fas fa-search"></i></a>
+             <a href="#"><i class="fas fa-paperclip"></i></a>
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+           </div>
+         </div>
+         <div class="chat ">
+           <div class="wrapper">
+             <div class="green_message">
+               <span>Ciao!</span>
+               <span class="time">05:37</span>
+               <i class="fa fa-chevron-down f-right message-options"></i>
+                 <div class="elimina-messaggio">
+                   <span class="point">Message Info</span>
+                   <span class="message-delete point">Delete message</span>
+                 </div>
+             </div>
+             <div class="white_message">
+               <span>Ciao!</span>
+               <span class="time">05:37</span>
+               <i class="fa fa-chevron-down f-right message-options"></i>
+                 <div class="elimina-messaggio">
+                   <span class="point">Message Info</span>
+                   <span class="message-delete point">Delete message</span>
+             </div>
+           </div>
+         </div>
+         <div class="bottom">
+           <div class="icon"><i class="far fa-smile"></i></div>
+           <input type="text" placeholder="Scrivi un messaggio">
+           <div class="icon"><i class="fas fa-paper-plane pointer"></i></div>
+         </div>
+       </div>
+     </div>
+     <!-- NEW TEXT  -->
+    <div class="new_text">
+      <div class="green_message hide">
+        <span class="myText"></span>
+        <span class="time"></span>
+      </div>
+      <div class="white_message hide">
+        <span class="otherText"></span>
+        <span class="time"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/myjs.js"></script>
+  </body>
+</html>
