@@ -6,6 +6,7 @@
 }
 body{
   background: linear-gradient(180deg, #009688 17%,#d8dbd5 17%);
+  font-family: 'Lato', sans-serif;
 }
 .darkmode {
   background: black;

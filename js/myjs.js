@@ -51,7 +51,12 @@ $(document).on('click', '.message-delete', function() {
   $(this).parents('.green_message, .white_message').remove();
 });
 
-
+// CURRENT TIME ON GREEN
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+// TIME ON WHITE
+var dt = new Date();
+document.getElementById("datetimewhite").innerHTML = dt.toLocaleTimeString();
 // EXTRA DARKMODE SOFT FORM
 $(".darksun").click(function(){
   $("#forbidden").addClass("darkmode");
