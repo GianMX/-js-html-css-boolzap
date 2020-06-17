@@ -1,6 +1,20 @@
 // ACCEPT ON KEYDOWN OR CLICK MESSAGE FROM USER
 $(document).ready(
   function(){
+// SEARCHING FUNCTION
+    $('.ricerca input').keyup(
+     function(event){
+       var input = $('.ricerca input').val();
+       var lookFor = input.toUpperCase();
+       $(".item-contatti").hide();
+       $(".item-contatti").each(
+         function() {
+           if($(this).attr('name').includes(lookFor)){
+             $(this).show();
+     }
+   });
+});
+// ADD USER MESSAGE (BLOCK IF EMPTY)
     $('.bottom input').keydown(
       function(event){
         if($('.bottom input').val().length > 0){
