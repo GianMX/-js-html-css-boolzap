@@ -280,8 +280,14 @@ body{
 .message-options {
   visibility: hidden;
 }
-
 .point {
   cursor: pointer;
   font-size: 10px;
+}
+/* CHANGE CHAT */
+.wrapper.visible{
+  display: block;
+}
+.wrapper.hidden{
+  display: none;
 }

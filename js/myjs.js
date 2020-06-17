@@ -64,7 +64,12 @@ $(document).on('click', '.message-options', function() {
 $(document).on('click', '.message-delete', function() {
   $(this).parents('.green_message, .white_message').remove();
 });
-
+$(document).on('click','.item-contatti',
+ function(){
+   $('.wrapper').addClass('hidden');
+   index = parseInt($(this).attr('data-conversazione'));
+   $('div[data-contact=' + index + ']').removeClass('hidden');
+});
 // CURRENT TIME ON GREEN
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();

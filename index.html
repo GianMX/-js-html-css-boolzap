@@ -10,208 +10,376 @@
     <title>BoozApp!</title>
   </head>
   <body id="forbidden">
-    <div class="container">
-      <!-- LEFT-SIDE -->
-       <div id="left">
-         <div class="top">
-           <div class="avatar">
-             <img src="img/avatar_io.jpg" alt="avatar">
-           </div>
-           <!-- ICONS + EXTRA LIGHT AND DARK MODE -->
-           <div class="icon">
-             <a href="#"><i class="far fa-lightbulb lightmode"> Light</i></i></a>
-             <a href="#"><i class="far fa-moon darksun"> Dark</i></i></a>
-             <a href="#"><i class="fas fa-circle-notch"></i></a>
-             <a href="#"><i class="fas fa-comment-alt"></i></a>
-             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-           </div>
+  <div class="container">
+    <!-- LEFT-SIDE -->
+     <div id="left">
+       <div class="top">
+         <div class="avatar">
+           <img src="img/avatar_io.jpg" alt="avatar">
          </div>
-         <!-- NOTIFICATION -->
-         <div class="bell">
-           <div class="campanella">
-             <a href="#"><i class="fas fa-bell-slash"></i></a>
-           </div>
-           <div class="messaggio">
-             <p class="strong">Ricevi notifiche di nuovi messaggi</p>
-             <a href="#">Attiva notifiche desktop</a>
-           </div>
-         </div>
-         <!-- SEARCHING CONTACT -->
-         <div class="searching_bar ricerca">
-           <i class="fas fa-search"></i>
-           <input type="text" placeholder="Cerca o inizia una nuova chat">
-         </div>
-         <!-- CONTACTS -->
-         <div class="contatti " id="contacts_my">
-           <ul>
-             <!-- 1st contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="0" name="LEMMY">
-               <div class="avatar">
-                 <img src="img/avatar_1.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Lemmy Kilmister</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">05:37</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 2nd contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="1" name="JIMI">
-               <div class="avatar">
-                 <img src="img/avatar_2.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Jimi Hendrix</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">18:09</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 3rd contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="2" name="PHIL">
-               <div class="avatar">
-                 <img src="img/avatar_3.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Phil Anselmo</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">17:54</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 4th contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="3" name="WAYNE">
-               <div class="avatar">
-                 <img src="img/avatar_4.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Wayne Static</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">07:03</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 5th contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="4" name="ROGER">
-               <div class="avatar">
-                 <img src="img/avatar_5.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Roger Daltrey</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">19:17</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 6th contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="5" name="JIM">
-               <div class="avatar">
-                 <img src="img/avatar_6.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Jim Morrison</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">12:25</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 7th contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="6" name="COREY">
-               <div class="avatar">
-                 <img src="img/avatar_7.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">Corey Taylor</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">22:22</span>
-                 </div>
-               </div>
-             </li>
-             <!-- 8th contact -->
-             <li class="item-contatti border-bottom" data-conversazione ="7" name=JOHN>
-               <div class="avatar">
-                 <img src="img/avatar_8.jpg" alt="avatar">
-               </div>
-               <div class="info">
-                 <div class="nome">
-                   <p class="strong">John Fogerty</p>
-                 </div>
-                 <div class="status">
-                   <span>Non poteva essere altrimenti</span>
-                   <span class="time">08:05</span>
-                 </div>
-               </div>
-             </li>
-           </ul>
+         <!-- ICONS + EXTRA LIGHT AND DARK MODE -->
+         <div class="icon">
+           <a href="#"><i class="far fa-lightbulb lightmode"> Light</i></i></a>
+           <a href="#"><i class="far fa-moon darksun"> Dark</i></i></a>
+           <a href="#"><i class="fas fa-circle-notch"></i></a>
+           <a href="#"><i class="fas fa-comment-alt"></i></a>
+           <a href="#"><i class="fas fa-ellipsis-v"></i></a>
          </div>
        </div>
-       <!-- RIGHT SIDE  -->
-       <div id="right">
-         <div class="top">
-           <div class="avatar">
-             <img src="img/avatar_1.jpg" alt="avatar">
-           </div>
-           <div class="info">
-             <div class="nome">
-               <p class="strong">Lemmy Kilmister</p>
+       <!-- NOTIFICATION -->
+       <div class="bell">
+         <div class="campanella">
+           <a href="#"><i class="fas fa-bell-slash"></i></a>
+         </div>
+         <div class="messaggio">
+           <p class="strong">Ricevi notifiche di nuovi messaggi</p>
+           <a href="#">Attiva notifiche desktop</a>
+         </div>
+       </div>
+       <!-- SEARCHING CONTACT -->
+       <div class="searching_bar ricerca">
+         <i class="fas fa-search"></i>
+         <input type="text" placeholder="Cerca o inizia una nuova chat">
+       </div>
+       <!-- CONTACTS -->
+       <div class="contatti " id="contacts_my">
+         <ul>
+           <!-- 1st contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="0" name="LEMMY">
+             <div class="avatar">
+               <img src="img/avatar_1.jpg" alt="avatar">
              </div>
-             <div class="status">
-               <p>Ultimo accesso oggi alle 05:37</p>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Lemmy Kilmister</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">05:37</span>
+               </div>
              </div>
+           </li>
+           <!-- 2nd contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="1" name="JIMI">
+             <div class="avatar">
+               <img src="img/avatar_2.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Jimi Hendrix</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">18:09</span>
+               </div>
+             </div>
+           </li>
+           <!-- 3rd contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="2" name="PHIL">
+             <div class="avatar">
+               <img src="img/avatar_3.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Phil Anselmo</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">17:54</span>
+               </div>
+             </div>
+           </li>
+           <!-- 4th contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="3" name="WAYNE">
+             <div class="avatar">
+               <img src="img/avatar_4.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Wayne Static</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">07:03</span>
+               </div>
+             </div>
+           </li>
+           <!-- 5th contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="4" name="ROGER">
+             <div class="avatar">
+               <img src="img/avatar_5.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Roger Daltrey</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">19:17</span>
+               </div>
+             </div>
+           </li>
+           <!-- 6th contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="5" name="JIM">
+             <div class="avatar">
+               <img src="img/avatar_6.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Jim Morrison</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">12:25</span>
+               </div>
+             </div>
+           </li>
+           <!-- 7th contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="6" name="COREY">
+             <div class="avatar">
+               <img src="img/avatar_7.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">Corey Taylor</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">22:22</span>
+               </div>
+             </div>
+           </li>
+           <!-- 8th contact -->
+           <li class="item-contatti border-bottom" data-conversazione ="7" name=JOHN>
+             <div class="avatar">
+               <img src="img/avatar_8.jpg" alt="avatar">
+             </div>
+             <div class="info">
+               <div class="nome">
+                 <p class="strong">John Fogerty</p>
+               </div>
+               <div class="status">
+                 <span>Non poteva essere altrimenti</span>
+                 <span class="time">08:05</span>
+               </div>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <!-- RIGHT SIDE  -->
+     <div id="right">
+       <div class="top">
+         <div class="avatar">
+           <img src="img/avatar_1.jpg" alt="avatar">
+         </div>
+         <div class="info">
+           <div class="nome">
+             <p class="strong">Lemmy Kilmister</p>
            </div>
-           <div class="icon">
-             <a href="#"><i class="fas fa-search"></i></a>
-             <a href="#"><i class="fas fa-paperclip"></i></a>
-             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+           <div class="status">
+             <p>Ultimo accesso oggi alle 05:37</p>
            </div>
          </div>
-         <div class="chat " data-contact="0">
-           <div class="wrapper">
-             <div class="green_message">
-               <span>Ciao!</span>
-               <span class="time">05:37</span>
-               <small class="destroyer">
-                 <i class="fa fa-chevron-down f-right message-options"></i>
-                   <div class="elimina-messaggio">
-                     <span class="point">Message Info</span>
-                     <span class="message-delete point">Delete message</span>
-                   </div>
-               </small>
-             </div>
-             <div class="white_message">
-               <span>Ciao!</span>
-               <span class="time">05:37</span>
-               <small class="destroyer">
-                 <i class="fa fa-chevron-down f-right message-options"></i>
-                   <div class="elimina-messaggio">
-                     <span class="point">Message Info</span>
-                     <span class="message-delete point">Delete message</span>
-                   </div>
-               </small>
-           </div>
+         <div class="icon">
+           <a href="#"><i class="fas fa-search"></i></a>
+           <a href="#"><i class="fas fa-paperclip"></i></a>
+           <a href="#"><i class="fas fa-ellipsis-v"></i></a>
          </div>
+       </div>
+       <div class="chat">
+         <div class="wrapper"  data-contact="0">
+           <div class="green_message">
+             <span>Born to loose!</span>
+             <span class="time">05:37</span>
+             <small class="destroyer">
+               <i class="fa fa-chevron-down f-right message-options"></i>
+                 <div class="elimina-messaggio">
+                   <span class="point">Message Info</span>
+                   <span class="message-delete point">Delete message</span>
+                 </div>
+             </small>
+           </div>
+           <div class="white_message">
+             <span>Live to win!</span>
+             <span class="time">05:37</span>
+             <small class="destroyer">
+               <i class="fa fa-chevron-down f-right message-options"></i>
+                 <div class="elimina-messaggio">
+                   <span class="point">Message Info</span>
+                   <span class="message-delete point">Delete message</span>
+                 </div>
+             </small>
+         </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="1">
+          <div class="green_message">
+            <span>Purple Haze!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>All along the watchtower</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="2">
+          <div class="green_message">
+            <span>Walk!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>Vulgar display of power!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="3">
+          <div class="green_message">
+            <span>The only!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>All in wait</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="4">
+          <div class="green_message">
+            <span>See me! Feel me!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>Listening to you!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="5">
+          <div class="green_message">
+            <span>Roadhouse blues!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>Light my fire!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="6">
+          <div class="green_message">
+            <span>Before i forget!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>Duality!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
+        <div class="wrapper hidden"  data-contact="7">
+          <div class="green_message">
+            <span>Working man!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+          </div>
+          <div class="white_message">
+            <span>Proud Mary!</span>
+            <span class="time">05:37</span>
+            <small class="destroyer">
+              <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="elimina-messaggio">
+                  <span class="point">Message Info</span>
+                  <span class="message-delete point">Delete message</span>
+                </div>
+            </small>
+        </div>
+        </div>
          <div class="bottom">
            <div class="icon"><i class="far fa-smile pointer"></i></div>
            <input type="text" placeholder="Scrivi un messaggio">
