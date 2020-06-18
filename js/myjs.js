@@ -67,6 +67,7 @@ $(document).on('click', '.message-delete', function() {
 $(document).on('click','.item-contatti',
  function(){
    $('.wrapper').addClass('hidden');
+   $('#right .top').addClass('hidden');
    index = parseInt($(this).attr('data-conversazione'));
    $('div[data-contact=' + index + ']').removeClass('hidden');
 });

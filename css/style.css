@@ -291,3 +291,9 @@ body{
 .wrapper.hidden{
   display: none;
 }
+.top.visible {
+  display:block;
+}
+.top.hidden {
+  display:none;
+}
