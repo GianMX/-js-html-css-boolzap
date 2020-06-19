@@ -44,7 +44,7 @@ function aggiungiMessaggioUtente(){
   bloccoMessaggio.removeClass('hide');
   var messaggio = $('.bottom input').val();
   bloccoMessaggio.prepend(messaggio);
-  $('.wrapper').append(bloccoMessaggio);
+  $('div[data-contact=' + index + '].wrapper').append(bloccoMessaggio);
   $('.bottom input').val('');
 }
 // ADD AUTOREPLY COMPUTER
@@ -53,7 +53,7 @@ function aggiungiMessaggioComputer(){
   bloccoMessaggio.removeClass('hide');
   var messaggio = 'New phone,who dis?';
   bloccoMessaggio.prepend(messaggio);
-  $('.wrapper').append(bloccoMessaggio);
+  $('div[data-contact=' + index + '].wrapper').append(bloccoMessaggio);
 }
 // DELETE MESSAGE OPTION
 $(document).on('click', '.message-options', function() {
