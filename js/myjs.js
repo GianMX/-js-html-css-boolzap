@@ -38,6 +38,14 @@ $(document).ready(
       }
     );
 });
+// CONTACT SELECTOR 
+$(document).on('click','.item-contatti',
+ function(){
+   $('.wrapper').addClass('hidden');
+   $('#right .top').addClass('hidden');
+   index = parseInt($(this).attr('data-conversazione'));
+   $('div[data-contact=' + index + ']').removeClass('hidden');
+});
 // ADD USER MESSAGE
 function aggiungiMessaggioUtente(){
   var bloccoMessaggio = $('.new_text .green_message').clone();
